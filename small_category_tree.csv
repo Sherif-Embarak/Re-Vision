@@ -1,0 +1,12 @@
+categoryid,parentid
+HOME & KITCHEN,
+HOME,HOME & KITCHEN
+KITCHEN,HOME & KITCHEN
+Refrigerators,HOME
+OVEN,HOME
+DISH Washer,HOME
+built-in,OVEN
+stand,OVEN
+Microwave,KITCHEN
+Coffee Machine,KITCHEN
+House,HOME & KITCHEN
