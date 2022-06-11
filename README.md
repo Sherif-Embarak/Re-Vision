@@ -1,2 +1,2 @@
 # Re-Vision
-Re-Vision eCommercetask 
+Re-Vision eCommerce task 
