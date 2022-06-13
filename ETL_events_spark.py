@@ -33,12 +33,15 @@ dfCSV.createOrReplaceTempView("events")
 
 
 
-totalSalary = spark.sql("select * from events where event='transaction'")
+transaction = spark.sql("select * from events where event='transaction'")
+events = spark.sql("select * from events where event<>'transaction'")
 
 
-query = totalSalary.writeStream.format("console").start()
+query1 = transaction.writeStream.format("console").start()
+query2 = events.writeStream.format("console").start()
 
-query.awaitTermination()
+query1.awaitTermination()
+query2.awaitTermination()
 
 
 
