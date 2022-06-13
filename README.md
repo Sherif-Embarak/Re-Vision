@@ -14,6 +14,8 @@ An ETL pipeline in the data engineering Re-Vision team.
 
 6.[How to run the code](#how-to-run-the-code)
 
+7.[Incremental Load](#incremental-load)
+
 
 
 ## ETL Architecture Diagram
@@ -22,7 +24,7 @@ An ETL pipeline in the data engineering Re-Vision team.
 
 The image above lays out the processing structure. We are going to go through an overview of why we try to adhere to this structure and will try to use the problem set  to explain how we'll apply this structure to the problem set.
 
-The first thing to note is our tech stack. We use CSVs for data storage, our transformation logic to move data from A to B is not restricted to but normally carried out in Python or Spark. We are using batch processing in the **"Full Initial Load"** however we can use Spark streaming at **Incremental Load"**.Also the current pipeline export data to CSV we can export it to any On-demand database like MYSQL or Cloud-based like AWS redshift.
+The first thing to note is our tech stack. We use CSVs for data storage, our transformation logic to move data from A to B is not restricted to but normally carried out in Python or Spark. We are using batch processing in the **"Full Initial Load"** however we can use Spark streaming at **"Incremental Load"**.Also the current pipeline export data to CSV we can export it to any On-demand database like MYSQL or Cloud-based like AWS redshift.
 
 Second, The attached scripts is exist in two pictures, **.ipynb** for explanation and **.py** for running.
 
@@ -76,4 +78,7 @@ python ETL_category.py
 ```
 ### second, To run streaming process
 
-Follow this [link](https://sparkbyexamples.com/spark/apache-spark-installation-on-windows/) 
+Follow this [link](https://sparkbyexamples.com/spark/apache-spark-installation-on-windows/)
+
+## How to run the code
+To be discussed.
