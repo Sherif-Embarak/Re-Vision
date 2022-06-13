@@ -8,7 +8,7 @@ An ETL pipeline in the data engineering Re-Vision team.
 
 ## ETL Architecture Diagram
 
-![alt text](images/ETL_Architecture_Diagram.png"ETL Architecture Diagram overview")
+![alt text](images/ETL_Architecture_Diagram.png" ETL Architecture Diagram overview")
 
 ## Data Model
-[alt text](images/Data_Model.png"Data Model overview")
+[alt text](images/Data_Model.png" Data Model overview")
