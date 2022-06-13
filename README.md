@@ -6,7 +6,7 @@ An ETL pipeline in the data engineering Re-Vision team.
 
 2.[Category Tree](#category-tree)
 
-3.[Item_properties](#item-properties)
+3.[Item properties](#item-properties)
 
 4.[Events](#events)
 
@@ -35,7 +35,7 @@ Third, although all scripts contain the names of files as a variable, we can pas
 
 The Structure of `Catergory_Tree` is memory efficient, however, it makes it hard to retrieve any of the pieces of information under some ParentId. Thus we use **DFS Traverse** to traverse the tree and make vertex between each node, which helps in finding the whole path from the root to leaves
 
-## Item_properties
+## Item properties
 
 Read parts iteratively and remove duplicates and keep only a single snapshot, and keep those processed parts at the staging area as **CSVs** then after processing all the parts, back to those staging files and apply the same processes and remove staging files and keep only `Out_Item_properties.csv`
 
