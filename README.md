@@ -2,9 +2,9 @@
 
 An ETL pipeline in the data engineering Re-Vision team.
 
-1.[ETL Architecture](#ETL_Architecture_Diagram)
+1.[ETL Architecture](#etl-architecture-diagram)
 
-2.[Data Model](#Data_Model)
+2.[Data Model](#data-model)
 
 ## ETL Architecture Diagram
 
