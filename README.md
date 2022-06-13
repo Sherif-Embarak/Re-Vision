@@ -80,5 +80,5 @@ python ETL_category.py
 
 Follow this [link](https://sparkbyexamples.com/spark/apache-spark-installation-on-windows/)
 
-## How to run the code
+## Incremental Load
 To be discussed.
