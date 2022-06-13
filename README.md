@@ -35,6 +35,8 @@ The Structure of `Catergory_Tree` is memory efficient, however, it makes it hard
 
 ## How to run the code
 
+Colne the  repo and add the scripts to the same files folder.
+
 ### First, To run batch processing
 
 Install `python-3.10.5`
@@ -43,6 +45,18 @@ The `requirements.txt` file should list all Python libraries scripts depend on, 
 
 ```
 pip install -r requirements.txt
+```
+#### To run The item proparties script
+```
+python ETL_item_properties.py
+```
+#### To run The events script
+```
+python ETL_events.py
+```
+#### To run The category script
+```
+python ETL_category.py
 ```
 ### second, To run streaming process
 
