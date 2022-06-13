@@ -6,9 +6,13 @@ An ETL pipeline in the data engineering Re-Vision team.
 
 2.[Category Tree](#category-tree)
 
-3.[Data Model](#data-model)
+3.[Item_properties](#item-properties)
 
-4.[How to run the code](#how-to-run-the-code)
+4.[Events](#events)
+
+5.[Data Model](#data-model)
+
+6.[How to run the code](#how-to-run-the-code)
 
 
 
@@ -28,6 +32,18 @@ Third, although all scripts contain the names of files as a variable, we can pas
 ![Alt text](images/CategoryTree.png "Data Model overview")
 
 The Structure of `Catergory_Tree` is memory efficient, however, it makes it hard to retrieve any of the pieces of information under some ParentId. Thus we use **DFS Traverse** to traverse the tree and make vertex between each node, which helps in finding the whole path from the root to leaves
+
+## Item_properties
+
+Read parts iteratively and remove duplicates and keep only a single snapshot, and keep those processed parts at the staging area as **CSVs** then after processing all the parts, back to those staging files and apply the same processes and remove staging files and keep only `Out_Item_properties.csv`
+
+Note: 
+  1-we can reshape this file to keep all properties as columns (wide view).
+  1-if we convert it to wide view the primary key for this table will be `itemId` and `timestamp` together.
+
+## Events
+
+Just split it into two tables `Out_Transactions` and `Out_events` to reduce the `NULL` occurrence in the "transactionId" column and drop it from `Out_events`.
 
 ## Data Model
 ![Alt text](images/Data_Model.png "Data Model overview")
