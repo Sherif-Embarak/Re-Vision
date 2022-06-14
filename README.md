@@ -40,8 +40,11 @@ The Structure of `Catergory_Tree` is memory efficient, however, it makes it hard
 Read parts iteratively and remove duplicates and keep only a single snapshot, and keep those processed parts at the staging area as **CSVs** then after processing all the parts, back to those staging files and apply the same processes and remove staging files and keep only `Out_Item_properties.csv`
 
 Note: 
-  1-we can reshape this file to keep all properties as columns (wide view).
-  1-if we convert it to wide view the primary key for this table will be `itemId` and `timestamp` together.
+  * we can reshape this file to keep all properties as columns (wide view).
+  * if we convert it to wide view the primary key for this table will be `itemId` and `timestamp` together.
+  
+timestamp convert by : 
+`df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')`
 
 ## Events
 
